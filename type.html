@@ -5,8 +5,8 @@
 	<style>
 		ul {
 			list-style-type: none;
-			margin: 0;
-			padding: 0;
+			margin: 15px;
+			padding: 5px;
 		}
 		p {
 			padding: 10px;
@@ -17,27 +17,77 @@
 		h1 {
 			text-align: center;
 		}
+		#scrollBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color:#333;
+	color:#fff;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+
+#scrollBtn:hover {
+	background-color: #1a1714;
+	scroll-behavior: smooth;
+}
+
+
 	</style>
 </head>
 <body bgcolor="#f0f0f0">
 	<h1>Types of Engineering</h1>
 	<ul>
         <p><ol><h2>There are many different types of engineering, each with its own unique focus and area of expertise. Some of the most common types of engineering include:------</h2></ol></p>
-		<p>Civil Engineering: Civil engineers design and oversee the construction of buildings, bridges, roads, and other infrastructure projects.</p>
+<p><b>Civil Engineering</b>: Civil engineers design and oversee the construction of buildings, bridges, roads, and other infrastructure projects.</p>
 
-<p>Mechanical Engineering: Mechanical engineers design and develop mechanical systems, such as engines, machines, and tools.</p>
+<p><b>Mechanical Engineering</b>: Mechanical engineers design and develop mechanical systems, such as engines, machines, and tools.</p>
 
-<p>Electrical Engineering: Electrical engineers work on the design and development of electrical systems, including power generation, transmission, and distribution.</p>
+<p><b>Electrical Engineering</b>: Electrical engineers work on the design and development of electrical systems, including power generation, transmission, and distribution.</p>
 
-<p>Aerospace Engineering: Aerospace engineers design and develop aircraft, spacecraft, satellites, and missiles.</p>
+<p><b>Aerospace Engineering</b>: Aerospace engineers design and develop aircraft, spacecraft, satellites, and missiles.</p>
 
-<p>Chemical Engineering: Chemical engineers work on the design and development of chemical processes, such as the production of chemicals, fuels, and pharmaceuticals.</p>
+<p><b>Chemical Engineering</b>: Chemical engineers work on the design and development of chemical processes, such as the production of chemicals, fuels, and pharmaceuticals.</p>
 
-<p>Computer Engineering: Computer engineers design and develop computer hardware and software systems.</p>
+<p><b>Computer Engineering</b>: Computer engineers design and develop computer hardware and software systems.</p>
 
-<p>Environmental Engineering: Environmental engineers work on the design and development of systems to protect the environment, such as water treatment and air pollution control systems.</p>
+<p><b>Environmental Engineering</b>: Environmental engineers work on the design and development of systems to protect the environment, such as water treatment and air pollution control systems.</p>
 
-<p>Biomedical Engineering: Biomedical engineers work on the design and development of medical equipment and devices, as well as research and development of new medical technologies.</p>
+<p><b>Biomedical Engineering</b>: Biomedical engineers work on the design and development of medical equipment and devices, as well as research and development of new medical technologies.</p>
 	</ul>
+	<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">⇑</button>
+
+	<script>
+		// Show the scroll button when the user scrolls down 20px from the top of the document
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("scrollBtn").style.display = "block";
+			} else {
+				document.getElementById("scrollBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the scroll button, scroll to the top of the document
+		function scrollToTop() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+</script>
+
+
+
+
+
+
+
+
 </body>
 </html>

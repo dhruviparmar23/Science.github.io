@@ -1,62 +1,188 @@
-/* Reset styles */
+/* Reset styles
 * {
-	margin: 0;
-	padding: 0;
+	margin: 10px;
+	padding: 5px;
 	box-sizing: border-box;
+	margin-left:20px;
+	margin-right:20px ;
 }
 
 /* Global styles */
-body {
+/*body {
 	font-family: Arial, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
     background:#f0f0f0;
 }
-
+/*
 header {
-	background-color: #333;
+	background-color: #c29b9b;
 	color: #fff;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+   
 	padding: 20px;
-}
+}/*
 
 nav ul {
 	list-style: none;
 	display: flex;
-}
+}/*
 
 nav ul li {
 	margin-right: 20px;
-}
+}/*
 
 nav ul li a {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: none
+		/* text-align: center; 
 }
-
+/*
 main {
 	padding: 20px;
-}
+}/*
 
 section {
 	margin-bottom: 20px;
-}
+}/*
 
 h2 {
 	font-size: 24px;
 	margin-bottom: 10px;
 }
-
+/*
 ul {
 	list-style: disc;
 	margin-left: 20px;
 }
-
+/*
 footer {
 	background-color: #333;
 	color: #fff;
 	padding: 20px;
 	text-align: center;
 }
+/*#scrollBtn{
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	font-size: 40px;
+	border: none;
+	outline: none;
+	background-color:#333;
+	color:#fff;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}/*
+
+#scrollBtn:hover {
+	background-color: #312c29;
+	scroll-behavior: smooth;
+} */
+
+
+
+
+
+/* Global styles */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	color: #333;
+	background-color: #c2c2c2;
+  }
+  
+  /* h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+  } */
+  
+  a {
+	color: #007bff;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+	padding: 1rem;
+	background-color: #343a40;
+  }
+  
+  .navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+  }
+  
+  .navbar-nav .nav-item {
+	margin-right: 1rem;
+  }
+  
+  .navbar-nav .nav-item:last-child {
+	margin-right: 0;
+  }
+  
+  .navbar-nav .nav-link {
+	font-size: 1.2rem;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+	padding: 6rem 2rem;
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+  }
+  
+  .jumbotron h1 {
+	font-size: 3.5rem;
+	margin-bottom: 2rem;
+  }
+  
+  .jumbotron p {
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+  }
+  
+  .jumbotron a {
+	font-size: 1.2rem;
+	font-weight: 700;
+	letter-spacing: 1px;
+  }
+  
+  /* Featured courses styles */
+  h2 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 2rem;
+  }
+  
+  .card {
+	border: none;
+	margin-bottom: 2rem;
+  }
+  
+  .card-img-top {
+	height: 200px;
+  }
+  
+  .card-title {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+  }
+  
+  .card-text {
+	font-size: 1.2rem;
+  }
+  
+
+  

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Engineering Stream</title>
@@ -8,44 +8,134 @@
 </head>
 <body>
 	<header>
-		<h1>Engineering Stream</h1>
+		<div class="eng"><h1>Engineering Stream</h1></div>
 		<nav>
 			<ul>
 				<li><a href="home.html" target="_blank">Home</a></li>
 				<li><a href="about.html" target="_blank">About</a></li>
-				<li><a href="type.html" target="_blank">Types of Engineering</a></li>
-			</ul>
+				<!-- <li><a href="intro.html" target="_blank">Introduction</a></li> -->
+				<!--<li><a href="type.html" target="_blank">Types of Engineering</a></li>
+				<!-- <li><a href="why.html" target="_blank">why?</a></li> -->
+			<!--</ul>
 		</nav>
-	</header><br><br>
+	</header><br>
 	<main>
 		<section id="about">
-			<h2>About Engineering</h2><br><br>
-           <p>Engineering is a field of study and profession that involves designing, creating, and improving upon technology and systems. It encompasses a wide range of disciplines, including mechanical, electrical, civil, chemical, and more. Engineers use scientific principles and mathematical methods to develop solutions to practical problems.
-
+			<h1>Engineering</h1><br>
+           <p>
+			Engineering is a field of study and profession that involves designing, creating, and improving upon technology and systems. It encompasses a wide range of disciplines, including mechanical, electrical, civil, chemical, and more. Engineers use scientific principles and mathematical methods to develop solutions to practical problems.
             Engineering education typically involves earning a degree in a specific engineering field, such as a Bachelor of Science in Mechanical Engineering. This requires taking a variety of courses, such as math, physics, and chemistry, as well as courses specific to the engineering field of study. Many engineers also pursue additional training or certifications throughout their career to stay up-to-date with the latest technology and practices.
-            
             Engineers can work in a variety of industries, including aerospace, automotive, construction, energy, and more. They may work in research and development, design, testing, or management roles. Many engineers also work for government agencies or as consultants for businesses.
-            
             The field of engineering is constantly evolving, with new technologies and innovations being developed all the time. The future of engineering is likely to focus on sustainable and renewable energy sources, artificial intelligence and machine learning, and advancements in healthcare technology.
-            
-            Overall, engineering is a fascinating and challenging field that offers a wide range of career opportunities. Whether you're interested in designing the next generation of cars, developing new medical technology, or working to create a sustainable future, engineering may be the perfect path for you.</p>
-        		</section>
-		<!-- <section id="types">
-			<h2>Types of Engineering</h2>
-			<ul>
-				<li>Mechanical Engineering</li>
-				<li>Civil Engineering</li>
-				<li>Electrical Engineering</li>
-				<li>Chemical Engineering</li>
-				<li>Software Engineering</li>
-				<li>Aerospace Engineering</li>
-				<li>Biomedical Engineering</li>
-			</ul>
-		</section> -->
-	</main><br><br><br><br><br>
-	<footer>
-		<p>&copy; 2023 Engineering Stream</p>
-	</footer>
-	<script src="script.js"></script>
+            Overall, engineering is a fascinating and challenging field that offers a wide range of career opportunities. Whether you're interested in designing the next generation of cars, developing new medical technology, or working to create a sustainable future, engineering may be the perfect path for you.
+		   </p>
+		   </section>
+		   
+	</main>
+	
+	
+		<button onclick="scrollToTop()" id="scrollBtn" title="Go to top">⇑</button>
+
+	<script>
+		// Show the scroll button when the user scrolls down 20px from the top of the document
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("scrollBtn").style.display = "block";
+			} else {
+				document.getElementById("scrollBtn").style.display = "none";
+			}
+		}
+
+		// When the user clicks on the scroll button, scroll to the top of the document
+		function scrollToTop() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+</script>
+
+<footer>
+	<p>&copy; 2023 Engineering Stream</p>
+</footer>
+</body>
+</html>
+ -->
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Science Stream Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+		footer {
+	background-color: #331818;
+	color: #f8f7f7;
+	padding: 30px;
+	text-align: center;
+	}
+</style>
+
+<body>
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Science Stream</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="type.html">types</a>
+      </li>
+	  <li class="nav-item">
+        <a class="nav-link" href="contact.html">contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Jumbotron -->
+<img src="image.jpeg" height="300px" width="375px"
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1><center>Welcome to Science Stream</center></h1>
+    <p class="lead">Learn about the latest advancements in science and technology.</p>
+    <center><a class="btn btn-primary btn-lg" href="explore.html" role="button">Explore</a></center>
+  </div><br>
+</div>
+<style>
+	p{
+		text-align: left;
+		padding: 30px;
+		text-decoration-color: aliceblue;
+	}
+</style>
+<div>
+	<h1><center>
+		science is what?
+	</center></h1>
+	<p>
+		Science is a systematic and organized approach to studying the natural world, including its physical, biological, and social aspects, using empirical evidence and logical reasoning. It involves observation, experimentation, and data analysis to develop and test hypotheses and theories about the world around us. Science aims to understand the fundamental principles that govern the universe, and to use this knowledge to make predictions, solve problems, and improve our lives.
+	</p>
+</div>
+<footer>
+	<center>&copy; 2023 science Stream</center>
+</footer>
 </body>
 </html>
